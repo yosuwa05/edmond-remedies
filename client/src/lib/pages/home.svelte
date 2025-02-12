@@ -274,10 +274,10 @@
           
                     <!-- Text Content -->
                     <div class="flex flex-col gap-2">
-                      <h1 class="font-bold text-sm text-left">
+                      <h1 class="font-bold text-lg text-left">
                         Effortless Appointment & Rescheduling
                       </h1>
-                      <p class="text-xs font-sans text-left w-full">
+                      <p class="text-xs md:text-sm font-sans text-left w-full">
                         Patients can easily make appointments & reschedule appointments, reducing missed visits.
                       </p>
                     </div>
@@ -301,7 +301,7 @@
                       <h1 class="font-bold text-lg">
                         Token Management System
                       </h1>
-                      <p class="text-sm font-sans">
+                      <p class="text-xs md:text-sm font-sans">
                         Streamline patient flow with real-time token alerts and notifications.
                       </p>
                     </div>
@@ -322,10 +322,10 @@
           
                     <!-- Text Content -->
                     <div class="flex flex-col gap-2">
-                      <h1 class="font-bold text-lg text-left">
+                      <h1 class="font-bold text-lg  text-left">
                         Effortless Appointment & Rescheduling
                       </h1>
-                      <p class="text-sm font-sans text-left w-full">
+                      <p class="text-xs md:text-sm font-sans text-left w-full">
                         Patients can easily make appointments & reschedule appointments, reducing missed visits.
                       </p>
                     </div>
