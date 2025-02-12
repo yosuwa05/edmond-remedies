@@ -6,7 +6,7 @@
 </script>
 
 <main class="lg:px-20 md:px-10 lg:py-20 px-5 py-10 bg-[#C5DFE2]/20">
- <div class="flex flex-col items-center justify-center lg:gap-5 gap-2">
+ <div class="flex flex-col items-center justify-center gap-3 ">
     <p class="text-[#178490] font-sans font-medium text-base">
         Solutions we have
     </p>
@@ -17,7 +17,7 @@
         Automate scheduling, reduce errors, save time, and enhance patient experience for seamless hospital efficiency.
     </p>
  </div>
-<div class=" lg:flex  hidden  lg:gap-32 lg:mt-24 gap-5 mt-5">
+<div class=" lg:flex  hidden  lg:gap-32 lg:mt-24  gap-5 mt-5">
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <div 
     on:mouseenter={() => (isHovered1 = true)}
@@ -103,20 +103,20 @@
         </div>
      </div>
 </div>
-<div class=" flex  lg:hidden flex-col gap-5 mt-5">
+<div class=" flex  lg:hidden flex-col md:gap-14 md:mt-16 gap-10 mt-10">
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <div 
     class="flex justify-start items-center gap-5">
     <div
     style="background: linear-gradient(180deg, #F9F9F9 72.07%, rgba(156, 211, 217, 0.17) 353.99%);" 
-    class="border border-[#178490] px-3 py-2 md:px-4 md:py-3 rounded-lg">
-    <img src="/images/january-1 1.png" alt="" class="h-9 w-16 md:h-10 md:w-10">
+    class="border border-[#178490] px-3 py-3 md:px-4 md:py-3.5 rounded-lg">
+    <img src="/images/january-1 1.png" alt="" class="h-9 w-16 md:h-9 md:w-9">
 
     </div>
         <div>
-    <h1 class=" font-semibold text-lg text-left">Streamlined Booking System</h1>
+    <h1 class=" font-semibold md:text-lg text-base text-left">Streamlined Booking System</h1>
     
-    <p class="text-[#3E3E3E] leading-normal text-left text-base">Our doctor appointment app automates bookings and eliminates scheduling conflicts.</p>
+    <p class="text-[#3E3E3E] leading-normal text-left md:text-base text-sm md:w-3/4">Our doctor appointment app automates bookings and eliminates scheduling conflicts.</p>
         </div>
      </div>
      <!-- svelte-ignore a11y_no_static_element_interactions -->
@@ -125,12 +125,12 @@
             <div
             style="background: linear-gradient(180deg, #F9F9F9 72.07%, rgba(156, 211, 217, 0.17) 353.99%);" 
             class="border border-[#178490] px-3 py-3 md:px-4 md:py-3 rounded-lg">
-            <img src="/images/anti-theft 1.png" alt="" class="h-8 w-20 md:h-10 md:w-10">
+            <img src="/images/anti-theft 1.png" alt="" class="h-9 w-20 md:h-10 md:w-12">
             </div>
         <div>
-    <h1 class=" font-semibold text-lg text-left">Secure Patient Management</h1>
+    <h1 class=" font-semibold md:text-lg text-base text-left">Secure Patient Management</h1>
       
-    <p class="text-[#3E3E3E] leading-normal text-left text-base">Easily manage appointments, rescheduling, and notifications through a centralized, user-friendly platform.</p>
+    <p class="text-[#3E3E3E] leading-normal text-left md:text-base text-sm md:w-3/4">Easily manage appointments, rescheduling, and notifications through a centralized, user-friendly platform.</p>
         </div>
      </div>
      <!-- svelte-ignore a11y_no_static_element_interactions -->
@@ -139,13 +139,13 @@
 
             <div
             style="background: linear-gradient(180deg, #F9F9F9 72.07%, rgba(156, 211, 217, 0.17) 353.99%);" 
-            class="border border-[#178490] px-3 py-2 md:px-4 md:py-4 rounded-lg">
-            <img src="/images/data-analysis 1.png" alt="" class="h-10 w-20 md:h-9 md:w-10">
+            class="border border-[#178490] px-3 py-3 md:px-4 md:py-4 rounded-lg">
+            <img src="/images/data-analysis 1.png" alt="" class="h-10 w-20 md:h-9 md:w-11">
             </div>
         <div>
-    <h1 class=" font-semibold text-lg text-left">Data Privacy Guaranteed:</h1>
+    <h1 class=" font-semibold md:text-lg text-base text-left">Data Privacy Guaranteed:</h1>
     
-    <p class="text-[#3E3E3E] leading-normal text-left text-base">With dedicated databases and two-factor authentication, your hospital's data stays fully secure.</p>
+    <p class="text-[#3E3E3E] leading-normal text-left md:text-base text-sm md:w-3/4">With dedicated databases and two-factor authentication, your hospital's data stays fully secure.</p>
         </div>
      </div>
 </div>

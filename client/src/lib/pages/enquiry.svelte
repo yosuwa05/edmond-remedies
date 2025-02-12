@@ -28,7 +28,7 @@
 
 <main class="py-5 px-10 flex lg:flex-row flex-col justify-center items-center lg:items-start lg:justify-normal">
     <section class="lg:w-1/2">
-<div class="flex flex-col gap-3">
+<div class="flex flex-col md:gap-6 gap-3">
     <p class="lg:text-base text-center lg:text-left text-sm font-medium font-sans text-[#178490]">
         Adaptable App
     </p>
@@ -37,12 +37,12 @@
     </h1>
 </div>
     </section>
-    <section class="lg:w-1/2 mt-5 lg:mt-0 flex justify-end lg:pr-20">
-<div class="p-5 lg:w-3/4 bg-[#F3F9F9] border rounded-lg border-[#DFE3E8]">
-<h1 class="text-lg font-semibold">
+    <section class="lg:w-1/2 md:w-3/4 mt-5  lg:mt-0 flex lg:justify-end justify-center lg:pr-20">
+<div class="p-5 lg:w-3/4 w-full  bg-[#F3F9F9] border rounded-lg border-[#DFE3E8]">
+<h1 class="text-xl font-semibold">
     Enquiry Form
 </h1>
-<div class="max-w-lg mx-auto  p-6 rounded-lg ">
+<div class=" mx-auto  py-6 rounded-lg ">
 
     <div class="grid grid-cols-1 gap-4">
       <div>
