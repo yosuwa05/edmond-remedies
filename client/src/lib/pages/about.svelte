@@ -7,7 +7,7 @@
 <p class="lg:text-2xl text-lg lg:mt-6  mt-3 text-[#3E3E3E]">
     Overcome delays & manual errors with ease.
 </p>
-<div class="lg:mt-10 md:my-8 my-5 flex lg:w-3/4 flex-wrap  lg:gap-5 gap-2">
+<div class="lg:mt-10 md:mb-14 my-5 flex lg:w-3/4 flex-wrap  lg:gap-5 gap-2">
 <p class="p-3 px-5 text-[#178490] bg-[#F5F6F7] rounded-xl w-fit font-sans font-medium lg:text-lg text-sm">
 Appointment Booking
 </p>

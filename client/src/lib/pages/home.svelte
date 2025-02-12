@@ -29,7 +29,7 @@
         // Reset all cards
         cards = cards.map((card, i) => ({
             ...card,
-            height: i === index ? 800 : 360,
+            height: i === index ? 1200 : 360,
             isActive: i === index
         }));
 
@@ -85,7 +85,7 @@
     <section class="pt-10">
         <div class="flex figtree justify-center items-center flex-col">
             <p class="xl:text-6xl lg:text-5xl md:text-4xl text-3xl xl:w-3/5 md:w-5/6  px-2 font-bold !leading-normal text-center">
-                Transform Your <span class="text-[#178490]"> <br class="md:hidden block"/>Hospital's Appointment</span> System with Ease
+                Transform Your <span class="text-[#178490]"> <br class="md:hidden block"/>Hospital's Appointment <br class="md:hidden block"/></span> System with Ease
             </p>
             <p class="lg:my-10 my-5 xl:text-xl  md:text-lg text-sm text-center lg:w-1/2 w-5/6">
                 Our secure and customizable app & website solution is designed to simplify hospital operations and enhance patient care.
