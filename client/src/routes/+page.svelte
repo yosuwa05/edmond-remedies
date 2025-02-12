@@ -15,3 +15,8 @@
     <Enquiry />
     <Footer />
 </main>
+<style>
+    :global(html) {
+        font-family: "Figtree", sans-serif;
+    }
+  </style>
