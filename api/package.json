@@ -1,0 +1,26 @@
+{
+  "name": "api",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun --watch run index.ts",
+    "typecheck": "tsc",
+    "build": "tsc && bun build --compile --minify-whitespace --minify-syntax --target bun --outfile server ./main.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.2.0",
+    "@elysiajs/swagger": "^1.2.0",
+    "@rasla/logify": "^4.0.0",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "elysia": "^1.2.12",
+    "mongoose": "^8.10.0",
+    "paseto-ts": "^1.5.7"
+  }
+}

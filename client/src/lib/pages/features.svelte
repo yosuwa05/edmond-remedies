@@ -20,42 +20,61 @@
             Boost operations and patient care with<br/> advanced tools.
         </p>
     </div>
-    <div class="flex flex-col lg:gap-4 gap-2">
-        <img src="/images/responsive 1.png" class="h-10 w-10" alt="">
-        <p class="font-semibold lg:text-2xl text-base text-[#252525]">Fully Branded App & Web Portal:</p>
-        <p class="text-[#3E3E3E] lg:text-xl text-sm">
-            Your hospital, your branding - Get app with your hospital Name
-        </p>
+    <div
+    style="background: linear-gradient(176.3deg, rgba(243, 249, 249, 0.75) 6.36%, #FFFFFF 14.68%);"
+     class="flex flex-col lg:gap-4 gap-2 relative top-5 pl-5">
+        <img src="/images/responsive 1.png" class="h-10 w-10 relative -top-5" alt="">
+        <div class="relative -top-5">
+            <p class="font-semibold lg:text-2xl text-base text-[#252525]">Fully Branded App & Web Portal:</p>
+            <p class="text-[#3E3E3E] lg:text-xl text-sm">
+                Your hospital, your branding - Get app with your hospital Name
+            </p>
+        </div>
     </div>
-    <div class="flex flex-col lg:gap-4 gap-2">
-        <img src="/images/responsive 1.png" class="h-10 w-10" alt="">
-        <p class="font-semibold lg:text-2xl text-base text-[#252525]">Customisable Features:</p>
-        <p class="text-[#3E3E3E] lg:text-xl text-sm">
-            Adapt the app to fit your workflow.
-        </p>
+    <div
+    style="background: linear-gradient(176.3deg, rgba(243, 249, 249, 0.75) 6.36%, #FFFFFF 14.68%);"
+    class="flex flex-col lg:gap-4  relative top-5 pl-5 gap-2">
+        <img src="/images/responsive 1.png" class="h-10 w-10 relative -top-5" alt="">
+  <div class="relative -top-5">     
+     <p class="font-semibold lg:text-2xl text-base text-[#252525]">Customisable Features:</p>
+    <p class="text-[#3E3E3E] lg:text-xl text-sm">
+        Adapt the app to fit your workflow.
+    </p></div>
     </div>
 </div>
 <div class="grid lg:w-[97%] lg:grid-cols-3 grid-cols-2 lg:gap-16 md:gap-10 gap-3 md:mt-24 lg:mt-10 mt-14  ">
-    <div class="flex flex-col lg:gap-4 gap-2 ">
-        <img src="/images/clock 1.png" class="h-10 w-10" alt="">
+    <div
+    style="background: linear-gradient(176.3deg, rgba(243, 249, 249, 0.75) 6.36%, #FFFFFF 14.68%);"
+    class="flex flex-col lg:gap-4 gap-2 relative top-5 pl-5">
+        <img src="/images/clock 1.png" class="h-10 w-10 relative -top-5" alt="">
+        <div class="relative -top-5">
         <p class="font-semibold lg:text-2xl text-base text-[#252525]">Automated Reminders:</p>
         <p class="text-[#3E3E3E] lg:text-xl text-sm">
             Reduce no-shows with timely alerts.
         </p>
+        </div>
     </div>
-    <div class="flex flex-col lg:gap-4 gap-2">
-        <img src="/images/diagram 1.png" class="h-10 w-10" alt="">
+    <div
+    style="background: linear-gradient(176.3deg, rgba(243, 249, 249, 0.75) 6.36%, #FFFFFF 14.68%);"
+    class="flex flex-col lg:gap-4 gap-2 relative top-5 pl-5">
+        <img src="/images/diagram 1.png" class="h-10 w-10 relative -top-5" alt="">
+       <div class="relative -top-5">
         <p class="font-semibold  lg:text-2xl text-base text-[#252525]">Real-Time Rescheduling:</p>
         <p class="text-[#3E3E3E] lg:text-xl text-sm">
             Smooth patient flow & reduced confusion.
         </p>
+       </div>
     </div>
-    <div class="flex flex-col lg:gap-4 gap-2 lg:w-[90%]">
-        <img src="/images/lab-coat 1.png" class="h-10 w-10" alt="">
+    <div 
+    style="background: linear-gradient(176.3deg, rgba(243, 249, 249, 0.75) 6.36%, #FFFFFF 14.68%);"
+    class="flex flex-col lg:gap-4 gap-2 lg:w-[90%] relative top-5 pl-5">
+        <img src="/images/lab-coat 1.png" class="h-10 w-10 relative -top-5" alt="">
+       <div class="relative -top-5">
         <p class="font-semibold  lg:text-2xl text-base text-[#252525]">Multi-Doctor & Multi-Department Support: </p>
         <p class="text-[#3E3E3E] lg:text-xl text-sm">
             Manage all appointments efficiently.
         </p>
+       </div>
     </div>
 </div>
 </main>

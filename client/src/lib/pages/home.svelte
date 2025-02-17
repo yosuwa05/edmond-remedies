@@ -17,7 +17,7 @@
     let isAnimating = false;
 
     function animateCard(index: number, override = false) {
-        if (isAnimating) return; // Prevent animation if one is already in progress
+        if (isAnimating) return; 
         isAnimating = true;
 
         if (!override) manualOverride = false;
@@ -29,7 +29,7 @@
         // Reset all cards
         cards = cards.map((card, i) => ({
             ...card,
-            height: i === index ? 1200 : 360,
+            height: i === index ? 1000 : 360,
             isActive: i === index
         }));
 
@@ -42,23 +42,23 @@
                     cards[previousIndex].isActive = false;
                     cards = [...cards];
                 }
-                isAnimating = false; // Animation is complete
+                isAnimating = false; 
             }, 800);
         }, 800);
     }
 
     function handleClick(index: number) {
-        if (index === lastClickedIndex || isAnimating) return; // Prevent continuous clicks or clicks during animation
+        if (index === lastClickedIndex || isAnimating) return;
         
         manualOverride = true;
         clearInterval(animationInterval);
         animateCard(index, true);
         lastClickedIndex = index;
 
-        // Resume animation from the next index after 3 seconds
+
         setTimeout(() => {
             manualOverride = false;
-            lastClickedIndex = -1; // Reset last clicked index
+            lastClickedIndex = -1; 
             startAnimation((index + 1) % cards.length);
         }, 2000);
     }
@@ -137,7 +137,7 @@
                                     <img src="/images/Date Picker.png" alt="" class="w-[190px] h-56 absolute left-0">
                                 </div>
                                 <div class="relative">
-                                    <img src="/images/Card.png" alt="" class="w-72 absolute top-20 right-0">
+                                    <img src="/images/Card.png" alt="" class="w-72 absolute top-16 right-0">
                                 </div>
                             </div>
                           </div>
@@ -170,7 +170,7 @@
                                     <img src="/images/Date.png" alt="" class="w-[90%]  absolute left-0">
                                 </div>
                                 <div class="relative">
-                                    <img src="/images/Group 5.png" alt="" class="w-72 absolute top-50 right-0">
+                                    <img src="/images/Group 5.png" alt="" class="w-72 absolute top-48 right-0">
                                 </div>
                             </div>
                           </div>

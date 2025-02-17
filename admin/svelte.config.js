@@ -8,12 +8,10 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter({
-			fallback: 'index.html', 
-		  }),
+		adapter: adapter(),
 		alias: {
-			'@/*': './path/to/lib/*'
-		}
+			"@/*": "./path/to/lib/*",
+		  },
 	}
 };
 

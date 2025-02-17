@@ -1,0 +1,1 @@
+<h1 class="text-3xl font-bold py-6 px-6">Dashboard</h1>
