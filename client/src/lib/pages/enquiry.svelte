@@ -201,6 +201,10 @@
 
 		onSuccess() {
 			toast.success('Enquiry Form Submitted Successfully ✅');
+			sessionStorage.removeItem("mobileProps");
+			countrySearchTerm = '';
+			stateSearchTerm = '';
+			citySearchTerm = '';
 			formData.set({
 				name: '',
 				phone: '',
@@ -213,7 +217,10 @@
 				city: '',
 				message: ''
 			});
+		
+
 			errors.set({});
+
 		},
 		onError(error) {
 			toast.error(error.message || 'Failed to submit enquiry. Please try again.');
