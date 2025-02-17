@@ -8,6 +8,10 @@
 	import { onMount } from 'svelte';
 	import Mobile from './mobile.svelte';
 
+	interface MobileComponent {
+    resetMobileInput: () => void;
+}
+
 	// Combined form and select state
 	let formData = writable({
 		name: '',
@@ -21,6 +25,7 @@
 		city: '',
 		message: ''
 	});
+	let mobileComponent: MobileComponent | undefined;
 
 	// Search and select state
 	let isCountryOpen = false;
@@ -201,7 +206,10 @@
 
 		onSuccess() {
 			toast.success('Enquiry Form Submitted Successfully ✅');
-			sessionStorage.removeItem("mobileProps");
+			       // Add this check and reset
+				   if (mobileComponent?.resetMobileInput) {
+            mobileComponent.resetMobileInput();
+        }
 			countrySearchTerm = '';
 			stateSearchTerm = '';
 			citySearchTerm = '';
@@ -402,7 +410,7 @@
                         <label for="phone" class="block text-base font-medium text-[#6B7888]">
                             Phone Number <span class="text-red-500">*</span>
                         </label>
-                        <Mobile  />
+						<Mobile bind:this={mobileComponent} />
                         <!-- {#if phoneError || $errors.phone}
                             <p class="text-sm text-red-500">{phoneError || $errors.phone?.[0]}</p>
                         {/if} -->

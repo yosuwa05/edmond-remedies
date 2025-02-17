@@ -26,12 +26,19 @@
 		initialCountry: 'IN', // Set initial country to India
 		preferredCountries: ['IN'] // Set India as preferred country
 	};
-
 	// Get India's dial code for display
 	const selectedCountryDialCode = normalizedCountries.find(country => country.iso2 === 'IN')?.dialCode || '91';
-	
+
 	let searchText = '';
 	let isOpen = false;
+
+	export const resetMobileInput = () => {
+    value = null;
+    detailedValue = null;
+    valid = false;
+    selectedCountry = 'IN'; 
+    sessionStorage.removeItem('mobileProp');
+};
 
 	onMount(() => {
 		// Ensure India is selected on mount
