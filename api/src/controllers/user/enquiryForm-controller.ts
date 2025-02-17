@@ -11,11 +11,8 @@ export const EnquiryFormController = new Elysia({
   "/submit",
   async ({ body }) => {
     try {
-      const { name, phone,phoneCountry, email, hospitalName, hospitalType, country, city, message } = body;
+      const { name, phone,phoneCountry, email, hospitalName, hospitalType, country,state, city, message } = body;
 
-      const existingEnquiry = await EnquiryForm.findOne({ email, phone });
-
-      if (!existingEnquiry) {
         const newEnquiry = await EnquiryForm.create({
           name,
           phone,
@@ -24,6 +21,7 @@ export const EnquiryFormController = new Elysia({
           hospitalName,
           hospitalType,
           country,
+          state,
           city,
           message,
           status:"pending",
@@ -34,13 +32,7 @@ export const EnquiryFormController = new Elysia({
           message: "Enquiry form submitted successfully!",
           data: newEnquiry,
         };
-      }
-
-      return {
-        success: false,
-        message: "An enquiry with the same email or phone already exists!",
-        data: existingEnquiry,
-      };
+      
     } catch (error: any) {
       console.error("Error saving enquiry:", error);
       return {

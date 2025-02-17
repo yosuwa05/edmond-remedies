@@ -37,14 +37,14 @@
 	  <Table>
 		<TableHeader>
 		  <TableRow>
-			<TableHead>Sl.No</TableHead>
-			<TableHead>Name</TableHead>
-			<TableHead>Phone</TableHead>
-			<TableHead>Email</TableHead>
-			<TableHead>Hospital Name</TableHead>
-			<TableHead>City</TableHead>
-			<TableHead>Message</TableHead>
-			<TableHead>Created At</TableHead>
+			<TableHead class="font-bold text-black">Sl.No</TableHead>
+			<TableHead class="font-bold text-black">Name</TableHead>
+			<TableHead class="font-bold text-black">Phone</TableHead>
+			<TableHead class="font-bold text-black">Email</TableHead>
+			<TableHead class="font-bold text-black">Hospital Name</TableHead>
+			<TableHead class="font-bold text-black">Location</TableHead>
+			<TableHead class="font-bold text-black">Message</TableHead>
+			<TableHead class="font-bold text-black">Created At</TableHead>
 		  </TableRow>
 		</TableHeader>
 		<TableBody>
@@ -66,7 +66,7 @@
 				<TableCell>{enquiry.phone}</TableCell>
 				<TableCell>{enquiry.email}</TableCell>
 				<TableCell>{enquiry.hospitalName}</TableCell>
-				<TableCell>{enquiry.city}</TableCell>
+				<TableCell>{enquiry.country},{enquiry.state},{enquiry.city}</TableCell>
 				<TableCell>{enquiry.message}</TableCell>
 				<TableCell>{new Date(enquiry.createdAt).toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: true })}</TableCell>
 			  </TableRow>
