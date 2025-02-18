@@ -2,7 +2,7 @@
 import { app } from "./setup";
 
 const PORT = process.env.PORT || 4000;
-const HOST = process.env.HOST || "localhost";
+// const HOST = process.env.HOST || "0.0.0.0";
 
 let intervel: any;
 
@@ -44,10 +44,10 @@ let intervel: any;
 app.listen(
   {
     port: PORT,
-    hostname: HOST,
+    // hostname: HOST,
   },
-  ({ hostname, port }) => {
-    console.log(`Listening on http://${hostname}:${port}`);
-    console.log(`Checkout the docs at http://${hostname}:${port}/api/docs`);
+  ({ port }) => {
+    console.log(`Listening on http://${app.server?.hostname}:${port}`);
+    console.log(`Checkout the docs at http://${app.server?.hostname}:${port}/api/docs`);
   }
 );
