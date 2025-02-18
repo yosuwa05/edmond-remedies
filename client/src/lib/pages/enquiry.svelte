@@ -5,9 +5,9 @@
 	import { _axios } from '$lib/_axios';
 	import { toast } from 'svelte-sonner';
 	import { cUrl, ckey } from '$lib/config';
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from "svelte";
 	import Mobile from './mobile.svelte';
-
+	import { browser } from "$app/environment";
 	interface MobileComponent {
     resetMobileInput: () => void;
 }
@@ -43,7 +43,7 @@
     let phoneError = '';
     let phoneValid = false;
 
-	const hospitalTypes = ['Public', 'Private', 'Clinic', 'Specialized'];
+	const hospitalTypes = ['Type 1', 'Type 2', 'Type 3', 'Type 4'];
 	let errors = writable<Record<string, string[]>>({});
 
 	// Form validation schema
@@ -81,7 +81,12 @@
 		formData.update((data) => ({ ...data, [field]: value }));
 		validateField(field, value);
 	}
-    
+	$: if (countrySearchTerm.trim() === "") {
+		stateSearchTerm  = '';
+		citySearchTerm = '';
+		selectedCountry='';
+		selectedState='';
+	}
     function validatePhone() {
         const storedMobileProp = sessionStorage.getItem('mobileProp');
         if (storedMobileProp) {
@@ -256,10 +261,33 @@
 			toast.error('An unexpected error occurred. Please try again.');
 		}
 	}
+	function handleClickOutside(event) {
+    setTimeout(() => {
+        if (
+            !event.target.closest(".country-dropdown") &&
+            !event.target.closest(".state-dropdown") &&
+            !event.target.closest(".city-dropdown") &&
+            !event.target.closest("input") // Prevent closing when clicking inside input fields
+        ) {
+            isCountryOpen = false;
+            isStateOpen = false;
+            isCityOpen = false;
+        }
+    }, 0);
+}
 
 	onMount(() => {
+	if (browser) {
 		loadCountries();
-	});
+		document.addEventListener("click", handleClickOutside);
+	}
+});
+
+onDestroy(() => {
+	if (browser) {
+		document.removeEventListener("click", handleClickOutside);
+	}
+});
 </script>
 
 <main
@@ -473,7 +501,7 @@
 								on:focus={() => (isCountryOpen = true,isCityOpen=false,isStateOpen=false)}
 							/>
 							{#if isCountryOpen}
-								<div class="select-dropdown">
+								<div class="select-dropdown country-dropdown">
 									{#if filteredCountries.length === 0}
 										<div class="option">No countries found</div>
 									{:else}
@@ -502,7 +530,7 @@
 									on:focus={() => (isStateOpen = true,isCityOpen=false,isCountryOpen=false)}
 								/>
 								{#if isStateOpen}
-									<div class="select-dropdown">
+									<div class="select-dropdown state-dropdown">
 										{#if filteredStates.length === 0}
 											<div class="option">No states found</div>
 										{:else}
@@ -532,7 +560,7 @@
 									on:focus={() => (isCityOpen = true,isCountryOpen=false,isStateOpen=false)}
 								/>
 								{#if isCityOpen}
-									<div class="select-dropdown">
+									<div class="select-dropdown city-dropdown">
 										{#if filteredCities.length === 0}
 											<div class="option">No cities found</div>
 										{:else}
