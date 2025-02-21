@@ -12,7 +12,7 @@
 		}
 	});
 
-	let showDropdown = true;
+	let showDropdown = false;
 
 	function toggleDropdown() {
 		showDropdown = !showDropdown;

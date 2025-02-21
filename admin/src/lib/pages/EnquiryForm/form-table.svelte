@@ -15,7 +15,7 @@
 	import Icon from '@iconify/svelte';
 	
 	let page = 1;
-	let limit = 10;
+	let limit = 7;
 	let search = '';
 	let selectedEnquiry = null;
 	let isDialogOpen = false;
