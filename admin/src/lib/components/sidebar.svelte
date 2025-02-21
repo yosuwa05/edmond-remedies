@@ -37,7 +37,7 @@
 				class="border-b-[2px] border-[#178490] min-h-[50px] cursor-pointer flex gap-2 justify-center items-center"
 			>
 				<!-- <Icon icon="fa-solid:chess-king" class="text-2xl" /> -->
-				<h1 class="text-2xl font-bold p-4 text-center">Edmond Remedies</h1>
+				<h1 class="text-2xl font-bold p-4 text-center">Edmond Remedis</h1>
 			</div>
 		</button>
 
