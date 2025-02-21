@@ -5,7 +5,7 @@
  <main class="lg:px-20 lg:py-10 md:px-10 px-5 py-5 lg:mt-32 my-0 lg:bg-[#F3F9F9] flex lg:flex-row flex-col justify-between">
     <div>
 <h1 class="pb-5 font-semibold lg:text-2xl text-xl text-[#252525]">
-    Edmond Remedies
+    Edmond Remedis
 </h1>
 <div class="flex  lg:hidden gap-2">
 	<Icon class="w-6 h-6 text-[#178490]" icon="mdi:instagram" />
