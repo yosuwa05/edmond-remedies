@@ -8,6 +8,7 @@
 	import { onMount, onDestroy } from "svelte";
 	import Mobile from './mobile.svelte';
 	import { browser } from "$app/environment";
+	import Icon from '@iconify/svelte';
 	interface MobileComponent {
     resetMobileInput: () => void;
 }
@@ -261,6 +262,7 @@
 			toast.error('An unexpected error occurred. Please try again.');
 		}
 	}
+
 	function handleClickOutside(event) {
     setTimeout(() => {
         if (
@@ -597,9 +599,17 @@ onDestroy(() => {
 					<div class="flex justify-end">
 						<button
 							on:click={submitForm}
-							class="w-fit rounded-xl bg-[#178490] px-5 py-2 font-medium text-white"
+							class={`w-fit rounded-xl bg-[#178490] px-5 py-2 font-medium text-white ${$submitMutation.isPending?'cursor-not-allowed':'cursor-pointer'}`}
 						>
-							Submit
+						{#if $submitMutation.isPending}
+						<div class="flex gap-2">
+  <Icon icon="line-md:loading-twotone-loop" class="text-2xl" />
+  <span>Submitting...</span>
+
+						</div>
+{:else}
+  Submit
+{/if}
 						</button>
 					</div>
 				</div>
