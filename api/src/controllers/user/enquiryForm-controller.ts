@@ -13,6 +13,18 @@ export const EnquiryFormController = new Elysia({
     try {
       const { name, phone,phoneCountry, email, hospitalName, hospitalType, country,state, city, message } = body;
 
+      const existingEnquiry = await EnquiryForm.findOne({
+        $or: [{ email }, { phone }],
+        status: "pending",
+      });
+
+      if (existingEnquiry) {
+        return {
+          success: false,
+          message: "Enquiry with same email or phone number already exists. Please wait for it to be processed.",
+        };
+      }
+
         const newEnquiry = await EnquiryForm.create({
           name,
           phone,
