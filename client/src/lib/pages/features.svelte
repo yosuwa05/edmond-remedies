@@ -36,7 +36,7 @@
     class="flex flex-col lg:gap-4  relative top-5 pl-5 gap-2">
         <img src="/images/responsive 1.png" class="h-10 w-10 relative -top-5" alt="">
   <div class="relative -top-5">     
-     <p class="font-semibold lg:text-2xl text-base text-[#252525]">Customisable Features:</p>
+     <p class="font-semibold lg:text-2xl text-base text-[#252525]">Customizable Features:</p>
     <p class="text-[#3E3E3E] lg:text-xl text-sm">
         Adapt the app to fit your workflow.
     </p></div>
