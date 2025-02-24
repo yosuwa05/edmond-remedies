@@ -261,11 +261,10 @@
                   style="background: linear-gradient(149.2deg, #FFFFFF 44.55%, #44A7B2 362.07%);"   
                   >
                     
-                    <!-- Image in Front -->
-                    <div class="flex-shrink-0">
-                      <img src="/images/Date.png" alt="" class="w-[60px] h-[50px]">
+               
+                    <div class="flex-shrink-0 ">
+                      <img src="/images/Group 7.png" alt="" class="w-[60px] h-[70px]">
                     </div>
-          
                     <!-- Text Content -->
                     <div class="flex flex-col gap-2 ">
                       <h1 class="font-bold md:text-lg text-sm  text-left">

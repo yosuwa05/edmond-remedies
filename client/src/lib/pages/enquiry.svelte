@@ -324,7 +324,7 @@ onDestroy(() => {
 						<div class="mt-5">
 							<div class="flex items-center gap-8">
 								<img src="/icons/tic.svg" class="h-5 w-5" alt="" />
-								<p class="text-2xl tracking-wide text-[#05003893] lg:text-3xl">One Doctor</p>
+								<p class="text-2xl tracking-wide text-[#05003893] lg:text-3xl">Single Doctor</p>
 							</div>
 						</div>
 					</div>
@@ -342,11 +342,11 @@ onDestroy(() => {
 						<div class="mt-5 flex flex-col gap-2 md:gap-8">
 							<div class="flex items-center gap-8">
 								<img src="/icons/tic.svg" class="h-5 w-5" alt="" />
-								<p class="text-2xl tracking-wide text-[#05003893] lg:text-3xl">One Reception</p>
+								<p class="text-2xl tracking-wide text-[#05003893] lg:text-3xl">Single Doctor</p>
 							</div>
 							<div class="flex items-center gap-8">
 								<img src="/icons/tic.svg" class="h-5 w-5" alt="" />
-								<p class="text-2xl tracking-wide text-[#05003893] lg:text-3xl">One Doctor</p>
+								<p class="text-2xl tracking-wide text-[#05003893] lg:text-3xl">Single Reception</p>
 							</div>
 						</div>
 					</div>
@@ -368,7 +368,11 @@ onDestroy(() => {
 						<div class="mt-5 flex flex-col gap-2 md:gap-8">
 							<div class="flex items-center gap-8">
 								<img src="/icons/tic.svg" class="h-5 w-5" alt="" />
-								<p class="text-2xl tracking-wide text-[#05003893] lg:text-3xl">One Reception</p>
+								<p class="text-2xl tracking-wide text-[#05003893] lg:text-3xl">Multiple Doctors</p>
+							</div>
+							<div class="flex items-center gap-8">
+								<img src="/icons/tic.svg" class="h-5 w-5" alt="" />
+								<p class="text-2xl tracking-wide text-[#05003893] lg:text-3xl">Single Reception</p>
 							</div>
 							<div class="flex items-center gap-8">
 								<img src="/icons/tic.svg" class="h-5 w-5" alt="" />
@@ -376,10 +380,7 @@ onDestroy(() => {
 									Multiple Departments
 								</p>
 							</div>
-							<div class="flex items-center gap-8">
-								<img src="/icons/tic.svg" class="h-5 w-5" alt="" />
-								<p class="text-2xl tracking-wide text-[#05003893] lg:text-3xl">Multiple Doctor</p>
-							</div>
+							
 						</div>
 					</div>
 					<div
@@ -396,8 +397,12 @@ onDestroy(() => {
 						<div class="mt-5 flex flex-col md:gap-8 gap-2">
 							<div class="flex items-center gap-8">
 								<img src="/icons/tic.svg" class="h-5 w-5" alt="" />
+								<p class="text-2xl tracking-wide text-[#05003893] lg:text-3xl">Multiple Doctors</p>
+							</div>
+							<div class="flex items-center gap-8">
+								<img src="/icons/tic.svg" class="h-5 w-5" alt="" />
 								<p class="text-2xl tracking-wide text-[#05003893] lg:text-3xl">
-									Multiple Reception
+									Multiple Receptions
 								</p>
 							</div>
 							<div class="flex items-center gap-8">
@@ -406,10 +411,7 @@ onDestroy(() => {
 									Multiple Departments
 								</p>
 							</div>
-							<div class="flex items-center gap-8">
-								<img src="/icons/tic.svg" class="h-5 w-5" alt="" />
-								<p class="text-2xl tracking-wide text-[#05003893] lg:text-3xl">Multiple Doctor</p>
-							</div>
+							
 						</div>
 					</div>
 				</div>
