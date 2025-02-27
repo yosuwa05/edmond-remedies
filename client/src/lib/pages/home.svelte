@@ -159,10 +159,10 @@
                         <div class="">
                             <div class="flex flex-col items-center gap-3">
                                <h1 class="font-bold text-lg text-center">
-                                Effortless Appointment & Rescheduling
+                                24/7 Booking and Automated Reminders
                                </h1>
                                <p class="text-sm w-4/5 text-center font-sans">
-                                Patients can easily make appointments & reschedule appointments, reducing missed visits.
+                                Allow patients to book anytime, with reminders to reduce no-shows.
                                </p>
                             </div>
                             <div class="w-full mt-3">
@@ -268,10 +268,10 @@
                     <!-- Text Content -->
                     <div class="flex flex-col gap-2 ">
                       <h1 class="font-bold md:text-lg text-sm  text-left">
-                        Effortless Appointment & Rescheduling
+                        24/7 Booking and Automated Reminders
                       </h1>
                       <p class="text-xs md:text-sm font-sans text-left w-full">
-                        Patients can easily make appointments & reschedule appointments, reducing missed visits.
+                        Allow patients to book anytime, with reminders to reduce no-shows.
                       </p>
                     </div>
                   </div>
