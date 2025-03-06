@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
-	import { writableGlobalStore } from '$lib/stores/global-store';
 	import Icon from '@iconify/svelte';
 
 	const routes = $state([
@@ -11,40 +10,40 @@
 		},
 		{
 			name: 'Dashboard',
-			href: '/dashboard/',
+			href: '/hidden-admin-base-007/dashboard/',
 			icon: 'uil:analysis',
 			subRoutes: '-',
 			canManagerAccess: true
 		},
 		{
 			name: 'Enquiries',
-			href: '/dashboard/enquiry/',
+			href: '/hidden-admin-base-007/dashboard/enquiry/',
 			icon: 'ic:baseline-insert-comment',
 			subRoutes: '-',
 			canManagerAccess: true
-		},
+		}
 	]);
 </script>
 
 <div
-	class="hidden bg-[#F3F9F9] border-[#178490] min-w-[300px] max-w-[300px] border-r-[2px]  md:block h-screen text-zinc-900 font-pt hidescrollbarthumb"
+	class="font-pt hidescrollbarthumb hidden h-screen min-w-[300px] max-w-[300px] border-r-[2px] border-[#178490] bg-[#F3F9F9] text-zinc-900 md:block"
 >
 	<div
-		class="flex flex-col justify-between h-[calc(100vh)] overflow-y-auto gap-2 hidescrollbarthumb"
+		class="hidescrollbarthumb flex h-[calc(100vh)] flex-col justify-between gap-2 overflow-y-auto"
 	>
-		<button onclick={() => goto('/dashboard')}>
+		<button onclick={() => goto('/hidden-admin-base-007/dashboard')}>
 			<div
-				class="border-b-[2px] border-[#178490] min-h-[50px] cursor-pointer flex gap-2 justify-center items-center"
+				class="flex min-h-[50px] cursor-pointer items-center justify-center gap-2 border-b-[2px] border-[#178490]"
 			>
 				<!-- <Icon icon="fa-solid:chess-king" class="text-2xl" /> -->
-				<h1 class="text-2xl font-bold p-4 text-center">Edmond Remedis</h1>
+				<h1 class="p-4 text-center text-2xl font-bold">Edmond Remedis</h1>
 			</div>
 		</button>
 
-		<nav class="flex flex-col items-start text-sm px-4 h-full">
+		<nav class="flex h-full flex-col items-start px-4 text-sm">
 			{#each routes as route}
 				{#if route.type === 'heading'}
-					<h2 class="text-md text-zinc-800 font-bold mt-2 mb-2">{route.name}</h2>
+					<h2 class="text-md mb-2 mt-2 font-bold text-zinc-800">{route.name}</h2>
 				{:else}
 					<div class="w-full rounded-md">
 						<button
@@ -54,20 +53,19 @@
 							}}
 						>
 							<div
-								class={`flex cursor-pointer items-center justify-start rounded-md p-2 group ${
+								class={`group flex cursor-pointer items-center justify-start rounded-md p-2 ${
 									$page.url.pathname === route.href ||
-									(route.href !== '/dashboard/' &&
-										$page.url.pathname.startsWith(route.href ?? ''))
-										? 'bg-gradient-to-r from-[#17a2b8] to-[#178490] text-white font-bold'
+									(route.href !== '/dashboard/' && $page.url.pathname.startsWith(route.href ?? ''))
+										? 'bg-gradient-to-r from-[#17a2b8] to-[#178490] font-bold text-white'
 										: 'text-zinc-600'
 								}`}
 							>
 								<Icon
 									icon={route.icon ?? ''}
-									class="mr-2 h-6 w-6 group-[.bg-gradient-to-r]:text-white group-[.bg-gradient-to-r]:font-bold text-gray-600"
+									class="mr-2 h-6 w-6 text-gray-600 group-[.bg-gradient-to-r]:font-bold group-[.bg-gradient-to-r]:text-white"
 								/>
 								<p
-									class="text-md flex items-center gap-3 rounded-lg px-3 font-normal group-text-zinc-900"
+									class="text-md group-text-zinc-900 flex items-center gap-3 rounded-lg px-3 font-normal"
 								>
 									{route.name}
 								</p>

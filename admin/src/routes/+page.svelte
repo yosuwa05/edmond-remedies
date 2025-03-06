@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { _axios } from '$lib/_axios';
-	import { writableGlobalStore } from '$lib/stores/global-store'; // Ensure this is imported
+	import { writableGlobalStore } from '$lib/stores/global-store';
+	// Ensure this is imported
 	import Icon from '@iconify/svelte';
 	import { createMutation } from '@tanstack/svelte-query';
 	import { toast } from 'svelte-sonner';
@@ -37,7 +38,7 @@
 			toast(data.message, {});
 
 			// Redirect to the dashboard
-			goto('/dashboard');
+			goto('/hidden-admin-base-007/dashboard');
 		},
 		onError(error, variables, context) {
 			console.error('onError', error, variables, context);
@@ -70,8 +71,8 @@
 	<title>Admin Login | Kingschic</title>
 </svelte:head>
 
-<div class="flex h-screen w-full items-center justify-center px-4 bg-[#F3F9F9]">
-	<div class="mx-auto min-w-[400px] bg-white rounded-lg shadow-md border-2 border-zinc-200 p-6">
+<div class="flex h-screen w-full items-center justify-center bg-[#F3F9F9] px-4">
+	<div class="mx-auto min-w-[400px] rounded-lg border-2 border-zinc-200 bg-white p-6 shadow-md">
 		<div class="mb-6">
 			<h2 class="text-3xl font-bold text-zinc-800">Login</h2>
 		</div>
@@ -86,10 +87,10 @@
 							placeholder="admin@example.com"
 							required
 							bind:value={email}
-							class="w-full p-2 border border-zinc-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+							class="w-full rounded-md border border-zinc-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
 						/>
 					</div>
-					<div class="grid gap-2 relative">
+					<div class="relative grid gap-2">
 						<label for="password" class="text-sm font-medium text-zinc-700">Password</label>
 						<input
 							id="password"
@@ -97,20 +98,20 @@
 							type={passwordShown ? 'text' : 'password'}
 							required
 							bind:value={password}
-							class="w-full p-2 border border-zinc-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 pr-10"
+							class="w-full rounded-md border border-zinc-300 p-2 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-400"
 						/>
 						<!-- svelte-ignore event_directive_deprecated -->
 						<button
 							type="button"
 							on:click={togglePasswordVisibility}
-							class="absolute right-2 bottom-2.5 cursor-pointer text-zinc-500 text-xl"
+							class="absolute bottom-2.5 right-2 cursor-pointer text-xl text-zinc-500"
 						>
 							<Icon icon={passwordShown ? 'mdi:eye-outline' : 'mdi:eye-off-outline'} />
 						</button>
 					</div>
 					<button
 						type="submit"
-						class="w-full font-medium bg-[#178490] text-white p-2 rounded-md hover:bg-[#1b7581] transition"
+						class="w-full rounded-md bg-[#178490] p-2 font-medium text-white transition hover:bg-[#1b7581]"
 					>
 						Login
 					</button>

@@ -8,13 +8,15 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-	    adapter: adapter({
-			fallback: 'index.html' 
-			
-		  }),
+		adapter: adapter({
+			fallback: 'index.html'
+		}),
+		paths: {
+			base: '/hidden-admin-base-007'
+		},
 		alias: {
-			"@/*": "./path/to/lib/*",
-		  },
+			'@/*': './path/to/lib/*'
+		}
 	}
 };
 
