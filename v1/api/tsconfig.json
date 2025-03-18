@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "ESNext"
-    ],
+    "lib": ["ESNext"],
     "module": "ESNext",
     "target": "ESNext",
     "moduleResolution": "bundler",
@@ -13,9 +11,7 @@
     "moduleDetection": "force",
     "noUncheckedIndexedAccess": true,
     "noEmit": true,
-    "types": [
-      "bun-types"
-    ],
+    "types": ["bun-types"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
